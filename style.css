@@ -1,10 +1,224 @@
-body{
-    background-color: rgb(250, 235, 215);
+body {
+    font: 1em sans-serif;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+     background-image: url(BG-video.mp4);
 }
-h1{
+
+video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 100px;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.video-container .content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 20%;
+}
+.container-1{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 538px;
+    gap: 50px;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+summary{
+   /* color: #00ffff;*/
+    display: block;
+    align-items: center;
+}
+
+ol,li{
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    gap: 0px;
+}
+details{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.h1 {
+    color: #00ffff;
     font-family: sans-serif;
-    font-style: italic;
+    background-color: ffffff;
+    text-shadow: #f6e9e9e2;
     text-align: center;
-    text-decoration:underline;
-    transition-delay: 2s;
+    align-items: center;
+    padding: 50px;
+    width: 20%;
+}
+h1,h2{
+    color:#ffffff;
+    align-items: center;
+}
+.Navbar{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:0%;
+    margin: 10px;
+    padding: 5px;
+}
+.Navbar a{
+    color: #ffffff;
+    display: grid;
+    place-content: center;
+    text-decoration: none;
+    transition-duration: .3s;
+}
+.Navbar a:hover{
+    cursor: pointer;
+    transition: 0.5ms ease-in-out;
+    color: #ffd700;
+}
+p,.para{
+    text-align:justify;
+    text-decoration: #dddddd;
+}
+.para{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction:row;
+    margin-top: 8rem;
+    align-items: center;
+    margin-bottom: 4rem;
+    justify-content: space-between;
+    background:none;
+}
+.card{
+    transition: 0.5s ease;
+    background-color: #ffd700;
+}
+.card:hover{
+    transform: scale(1.2);
+}
+
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+h2:hover {
+      color:#00BFFF;
+}
+.h3{
+    font-family: verdana;
+    font-style: unset;
+}
+.logo-img {
+    color: #ffffff;
+    margin-left:10px;
+    font-size: 24px;
+    align-items:center;
+    gap: 50px;
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+
+}
+.hero {
+    background:rgba(0,0,0,0.4);
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    /*padding: 2rem  1rem;*/
+}
+.mid {
+    background-color: azure;
+    background-image:url(images/bg-schl.jpg);
+    align-content: center;
+    text-align: center;
+    margin-top: 10px;
+    padding: 2px;
+    flex-wrap: wrap;
+}
+.course-container{
+    display: flex;
+    justify-content: center;
+    gap:3rem;
+    margin-top: 2px;
+}
+.info{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 2rem;
+    background-color: #f6e9e9e2;
+    border-radius:20px;
+    border-color: aqua;
+}
+form{
+    white-space:5px;
+    margin: 0%;
+}
+button{
+    align-items: center;
+    width: 90%;
+    padding: 2px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #ffd700;
+    color: #000;
+}
+button:hover{
+    background-color: #6a6a6a;
+    transition: 5ms ease-in-out;
+    cursor: pointer;
+    color: #ffffff;
+}
+footer {
+    /*background-color: #111111;*/
+    align-content: center;
+    height: 100%;
+    text-align:center;
+    margin-top: 5px;
+    padding: 0px;
+}
+footer a{
+    color:#00bfff;
+}
+footer a :hover{
+    color: #ffd700;
+}
+.column{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    justify-content: space-between;
+    max-width: 250px;
+}
+@media (prefers-reduced-motion){
+    .Navbar *{
+        transition-duration: 1s !important;
+        animation-duration: 1s !important;
+    }
 }
