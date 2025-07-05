@@ -1,2 +1,2 @@
 # webpage
-A basic webpage using #html and #css 
+A basic school webpage using #html and #css 
